@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
 
   app:
-    image: 1tdata-do_2024-08-28_6.11-02-app
+    build: .
     depends_on:
       db:
         condition: service_healthy
